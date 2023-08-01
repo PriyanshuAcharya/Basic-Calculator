@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <script lang="JavaScript" src="calculator.js">
+        </script>
+    </head>
+    <body style="background: linear-gradient(rgb(195, 255, 255),rgb(157, 252, 239),rgb(79, 228, 233),rgb(67, 223, 250),rgb(28, 28, 252));">
+        <center>
+        <h1 style="font-size: 70;color: darkblue;"><u>CALCULATOR</u></h1>
+        <form style="padding-top: 30px;">
+            <table border="2px solid" style="width:75%;height:350px;">
+                <tr>
+                    <td colspan="4"><input type="text" value="" disabled style="font-weight:bold;text-align:right;width:100%;height:30px;font-size: 30px;background-color: rgba(11, 255, 121, 0.034);color: rgba(182, 116, 100, 0.671);" id="displayall"></td>
+                </tr>
+                <tr>
+                    <td colspan="4"><input type="text" value="0" disabled style="font-weight:bold;text-align:right;width:100%;height:100%;font-size: 50px;background-color: rgb(101, 245, 166);color: rgb(255, 54, 4);" id="display"></td>
+                </tr>
+                <tr id="operations">
+                    <td id="AC" colspan="2"><input type="button" value="AC" style="font-weight:bold;width:100%;height:100%;font-size: 25px;background-color: rgb(153, 247, 195);color: rgb(255, 54, 4);" id="AC" onclick="AllClear()"></td>
+                    <td id="C" colspan="2"><input type="button" value="C" style="font-weight:bold;width:100%;height:100%;font-size: 25px;background-color: rgb(153, 247, 195);color: rgb(255, 54, 4);" id="C" onclick="Clear()"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="+" style="font-weight:bold;width:100%;height:100%;font-size: 25px;background-color: rgb(153, 247, 195);color: rgb(255, 54, 4);" id="+" onclick="operatorStore('+')"></td>
+                    <td><input type="button" value="-" style="font-weight:bold;width:100%;height:100%;font-size: 25px;background-color: rgb(153, 247, 195);color: rgb(255, 54, 4);" id="-" onclick="operatorStore('-')"></td>
+                    <td><input type="button" value="*" style="font-weight:bold;width:100%;height:100%;font-size: 25px;background-color: rgb(153, 247, 195);color: rgb(255, 54, 4);" id="*" onclick="operatorStore('*')"></td>
+                    <td><input type="button" value="/" style="font-weight:bold;width:100%;height:100%;font-size: 25px;background-color: rgb(153, 247, 195);color: rgb(255, 54, 4);" id="/" onclick="operatorStore('/')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="1" style="font-weight:bold;width:100%;height:100%;font-size: 25px;background-color: rgb(153, 247, 195);color: rgb(255, 54, 4);" id="1" onclick="displayFunc('1')"></td>
+                    <td><input type="button" value="2" style="font-weight:bold;width:100%;height:100%;font-size: 25px;background-color: rgb(153, 247, 195);color: rgb(255, 54, 4);" id="2" onclick="displayFunc('2')"></td>
+                    <td><input type="button" value="3" style="font-weight:bold;width:100%;height:100%;font-size: 25px;background-color: rgb(153, 247, 195);color: rgb(255, 54, 4);" id="3" onclick="displayFunc('3')"></td>
+                    <td rowspan="4"><input style="height:100%;width:100%;font-size: 40px;background-color: rgb(153, 247, 195);color: rgb(255, 54, 4);font-weight:bold;" type="button" value="=" onclick="resultequal()"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="4" style="font-weight:bold;width:100%;height:100%;font-size: 25px;background-color: rgb(153, 247, 195);color: rgb(255, 54, 4);" id="4" onclick="displayFunc('4')"></td>
+                    <td><input type="button" value="5" style="font-weight:bold;width:100%;height:100%;font-size: 25px;background-color: rgb(153, 247, 195);color: rgb(255, 54, 4);" id="5" onclick="displayFunc('5')"></td>
+                    <td><input type="button" value="6" style="font-weight:bold;width:100%;height:100%;font-size: 25px;background-color: rgb(153, 247, 195);color: rgb(255, 54, 4);" id="6" onclick="displayFunc('6')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="7" style="font-weight:bold;width:100%;height:100%;font-size: 25px;background-color: rgb(153, 247, 195);color: rgb(255, 54, 4);" id="7"  onclick="displayFunc('7')"></td>
+                    <td><input type="button" value="8" style="font-weight:bold;width:100%;height:100%;font-size: 25px;background-color: rgb(153, 247, 195);color: rgb(255, 54, 4);" id="8"  onclick="displayFunc('8')"></td>
+                    <td><input type="button" value="9" style="font-weight:bold;width:100%;height:100%;font-size: 25px;background-color: rgb(153, 247, 195);color: rgb(255, 54, 4);" id="9"  onclick="displayFunc('9')"></td>
+                </tr>
+                <tr>
+                    <td colspan="3"><input style="font-weight:bold;width:100%;height:100%;font-size: 25px;background-color: rgb(153, 247, 195);color: rgb(255, 54, 4);" type="button" value="0" id="0"  onclick="displayFunc('0')"></td>
+                </tr>
+            </table>
+        </form>
+        </center>
+    </body>
+</html>
